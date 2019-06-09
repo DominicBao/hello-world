@@ -1,10 +1,11 @@
 import xlrd
 import xlwt
 import sys
+from xlutils.copy import copy as xl_copy
 #-*- coding:utf-8 -*-
 
 # open xlsx
-book = xlrd.open_workbook("D:\\x.xlsx")
+book = xlrd.open_workbook("D:\\x.xlsx", formatting_info=True)
 # open biao
 sh = book.sheet_by_index(0)
 # get sum hang
@@ -50,13 +51,23 @@ print ("the data=",num_name," in this get",sum,"hit rate",(format((float(sum)/fl
 
 
 #new xls
-wb = xlwt.Workbook()
+
+wb = xl_copy(book)
 
 #new sheet
-sh_new = wb.add_sheet("new_sheet")
+sh_new = wb.add_sheet("sheet")
 
 #write data
-for i in range(1, len(sum_name)+1):
+for i in range(0, len(sum_name)+1):
+    if(i == 0):
+        for j in range(0, 3):
+            if (j == 0):
+                sh_new.write(i,j,"参数")
+            if (j == 1):
+                sh_new.write(i,j,"数量")
+            if (j == 2):
+                sh_new.write(i,j,"命中率")
+        continue
     for j in range(0,3):
         if(j == 0):
             sh_new.write(i, j, sum_name[i-1])
@@ -66,15 +77,19 @@ for i in range(1, len(sum_name)+1):
             sh_new.write(i, j, (format((float(sum_other[i - 1]) / float(num_name)), '.6f')))
         if(i == len(sum_name)):
             if(j==0):
-                sh_new.write(i+1, j, num_name)
-            if(j == 1):
-                sh_new.write(i + 1, j, sum)
-            if(j == 2):
-                sh_new.write(i + 1, j, (format((float(sum)/float(num_name)),'.6f')))
+                text = "本次手机号画像测试共有",num_name,"个例子，命中",sum,"个，命中率为",(format((float(sum)/float(num_name)),'.6f'))
+                print (text)
+                # he bing dan yuange
+                sh_new.write_merge(i+1, i+1, 0, 2, str(text))
+                #sh_new.write(i+1, j,text)
+            # if(j == 1):
+            #     sh_new.write(i + 1, j, sum)
+            # if(j == 2):
+            #     sh_new.write(i + 1, j, (format((float(sum)/float(num_name)),'.6f')))
 
 
 
 print (sum_name[0])
 print (sum_other[0])
 
-sh_new.save("D:\\x.xlsx")
+wb.save("D:\\x.xlsx")
