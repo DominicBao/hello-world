@@ -4,6 +4,8 @@ import sys
 from xlutils.copy import copy as xl_copy
 #-*- coding:utf-8 -*-
 
+
+# for windows
 # open xlsx
 book = xlrd.open_workbook("D:\\x.xlsx", formatting_info=True)
 # open biao
