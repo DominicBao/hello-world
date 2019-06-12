@@ -1,0 +1,8 @@
+<!--pages/weizhi/weizhi.wxml-->
+<map id="map" markers="{{markers}}" longitude="{{heng}}" latitude="{{zong}}" scale="14" bindcontroltap="controltap"  bindmarkertap="markertap"   bindregionchange="regionchange" show-location style="width: 100%; height: 350px;">
+</map>
+<button bindtap='gotoSetting' >打开授权信息面板</button>
+<button bindtap='wei' >访问位置权限</button>
+<button bindtap='onAuthLocation' >授权位置</button>
+<!--将用户信息加入数据库中-->
+<!--<button bindtap='ruku' >加入数据库</button>-->

@@ -1,0 +1,10 @@
+<!--pages/xuant/xuant.wxml-->
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+  <view style="display:flex;margin-top:20%;">
+    <input class='input_id' name="tpid" placeholder="请输入投票ID" />
+  </view>
+  <view style="display:flex;margin-top:20px;">
+    <button class='gong3' style="width:30%;" form-type="submit" >进入</button>
+  </view>
+</form>
+

@@ -1,0 +1,39 @@
+.biao{
+  width:100%;
+  text-align:center;
+  font-weight:bold;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.div_left{
+    width: 50%;
+    float: left;
+}
+.div1{
+    display: inline;
+    border-right:1px solid #000;
+    font-weight:bold;
+    font-size: 14px; 
+}
+
+.div_rirht{
+    width: 50%;
+    float: right;
+}

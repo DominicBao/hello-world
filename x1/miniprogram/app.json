@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index-1/index-1",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/zhuye/zhuye",
+    "pages/jipiao/jipiao",
+    "pages/xuanj/xuanj",
+    "pages/xuant/xuant",
+    "pages/chapiao/chapiao",
+    "pages/weizhi/weizhi"
+    
+  ],
+  "permission":{
+    "scope.userLocation":{
+      "desc":"你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#678cf1",
+    "navigationBarTitleText": "位置共享",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/zhuye/zhuye",
+        "text": "工 具",
+        "iconPath": "image/gongju1.png",
+        "selectedIconPath": "image/gongju.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日 志",
+        "iconPath": "image/rizhi1.png",
+        "selectedIconPath": "image/rizhi.png"
+      }
+    ]
+  }
+
+
+}

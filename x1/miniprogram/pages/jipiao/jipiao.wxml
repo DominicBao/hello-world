@@ -1,0 +1,27 @@
+<!--pages/jipiao/jipiao.wxml-->
+<text>\n</text>
+<view class='biao'>
+   <text>{{name}}</text>
+</view>
+<text>\n</text>
+<view wx:for="{{people}}" wx:for-index="i" wx:for-item="itemName">
+<div class="div_left">
+  <view style='width:100%;text-align:center;'>
+		<div id="name" class="div1">{{people[i]}}</div>
+    <div style="display: inline;font-weight:bold;font-size:14px;">\t\t\t\t票数：</div>
+    <div id="demo0" style="display: inline;border-top:1px solid #000;font-size:14px;">{{piaoshu[i]}}</div>
+  </view>
+
+  <view style='width:100%;text-align:center;'>
+		<button bindtap="addpiao" id="{{i}}" class="button button_cadd" name="0">投票</button>
+		<!--<button id="button_zero" class="button button_czero" style="background-color: #0089ffc9" name="0">清零</button>-->
+		<button bindtap="mupiao" id="{{i}}" class="button button_cmu" style="background-color: #ff4700cc" name="0">减票</button>
+	</view>
+</div>
+</view>
+<view>
+  <button style='width:85%;' bindtap="ti">提交</button>
+</view>
+
+
+

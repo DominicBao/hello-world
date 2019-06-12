@@ -1,0 +1,37 @@
+<!--pages/xuanj/xuanj.wxml-->
+<form bindsubmit="formBindsubmit" bindreset="formReset" class="{{xs?'hide':'show'}}">
+  <view style="display:flex;">
+    <input class='input_id' name="tpid" placeholder="请输入投票ID" />
+  </view>
+  <view style="display:flex;margin-top:10px;">
+    <button class='gong3' style="width:30%;" formType="submit" >进入</button>
+  </view>
+  <view class='view_c'>
+      <view bindtap='xianc'>创建投票</view>
+  </view>
+</form>
+
+<form class="hide{{xs?'show':''}}" id='form_c' bindsubmit="creamt">
+  <view style='margin-top:20%;'></view>
+  <view style="display:flex;">
+    <input class='input_id' style='margin-top:5%;' name="toun" placeholder="请输入投票名称" />
+  </view>
+  <view style="display:flex;">
+    <input class='input_id' value='{{sjm}}' style='margin-top:5%;' name="touip" placeholder="请输入投票ID" />
+  </view>
+  <view style="display:flex;">
+    <input class='input_id' style='margin-top:5%;' name="touname" placeholder="请输入被选人" />
+  </view>
+  <view style='text-align:center;font-size:15px;'>
+    <test>请使用“，”分割</test>
+  </view>
+  <view style="display:flex;">
+    <input class='input_id' style='margin-top:5%;' name="toup" placeholder="请输入每人投票数" />
+  </view>
+  <view style="display:flex;margin-top:10px;">
+    <button class='gong4' style="width:30%;" formType="submit" >创建</button>
+  </view>
+  <view class='view_c'>
+      <view bindtap='xianc'>进入投票</view>
+  </view>
+</form>

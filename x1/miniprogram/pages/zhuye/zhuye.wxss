@@ -1,0 +1,103 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #678cf1;
+  height: 130px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.userinfo-nickname1 {
+  color: rgba(28, 133, 231, 0.5);
+}
+
+.gong1 {
+  background-color: #ff4700; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top:15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 140px;
+    box-shadow: 0 3px 0 #d84105, 0 8px 3px rgba(0, 0, 0, 0.3);
+    height: 130px;
+    line-height:120px;
+}
+
+.gong4 {
+  background-color: #0089ff; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top:15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 140px;
+    box-shadow: 0 3px 0 #0475d8, 0 8px 3px rgba(0, 0, 0, 0.3);
+    height: 130px;
+    line-height:120px;
+}
+
+.gong5{
+  background-color:#4CAF50;
+border:none;
+color:white;
+text-align:center;
+text-decoration:none;
+font-size:16px;
+margin-top:15px;
+cursor:pointer;
+-webkit-transition-duration:0.4s;
+transition-duration:0.4s;
+width:140px;
+box-shadow:0 3px 0 #469b48, 0 8px 3px rgba(0, 0, 0, 0.3);
+height:130px;
+line-height:120px
+}
+
+.gong2{
+  background-color: #0089ff; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top:15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 85%;
+    box-shadow: 0 3px 0 #0475d8, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.gong3{
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top:15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 85%;
+    box-shadow: 0 3px 0 #469b48, 0 8px 3px rgba(0, 0, 0, 0.3);
+}

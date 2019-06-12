@@ -1,0 +1,17 @@
+<!--pages/zhuye/zhuye.wxml-->
+<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+<view>
+  <!--<button class='gong2'  bindtap='goto'>投票</button>
+  <button class='gong3'>计票器</button>-->
+  <view style='width:80%;margin-left:10%;'>
+    <!--<button class='gong1' style='float:left;'  bindtap='goto1'>投票</button>
+    <button class='gong4' style='float:right;' bindtap='goto'>计票器</button>-->
+    <button class='gong5' style='float:left;' bindtap='goto2'>位置</button>
+  </view>
+</view>
